@@ -1,0 +1,25 @@
+* sem login
+
+
+POST *api/auth/register (name, email, password, birthdate)
+POST *api/auth/login (email, password)
+POST api/auth/logout
+POST api/auth/refresh
+
+PUT api/user -- update no usuario (email, password, password_confirmation, name, birthdate, city, work)
+
+POST api/user/avatar -- alterar avatar via post (arquivo)
+POST api/user/cover -- alterar cover via post (arquivo)
+
+GET api/feed -- feed comum
+GET api/user/feed -- feed do perfil do usuario
+GET api/user/feed/id -- feed de algum outro usuario
+
+GET api/user -- ler info do usuario
+GET api/user/id -- ler info de usuario especifico
+
+POST api/feed -- fazer um POST (type text ou photo e mandar body)
+POST api/post/id/like -- dar ou tirar like
+POST api/post/id/comment -- fazer comentario em algum post
+
+GET api/search (mandar a query de busca)
